@@ -235,7 +235,6 @@ html {
 .header__notify-footer {
     display: flex;
     padding: 10px;
-    
     right: 0;
     left: 0;
 }
@@ -247,5 +246,90 @@ html {
     text-decoration: none;
     color:#000;
     opacity: 0.7;
-   
+}
+
+        /* Authen modal  */
+.auth-form {
+    max-width: 500px;
+    background-color:#fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.auth-form-container {
+    padding: 0 32px;
+}
+.auth-form-header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.auth-form-heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color:var(--text-color);
+}
+.auth-form-switch-btn {
+    font-size:1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;    
+}
+.auth-form__list-input {
+    margin-top: 20px;
+}
+.auth-form-group {
+    padding: 6px 0;
+}
+.auth-form-input {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding-left: 8px;
+}
+.auth-form-aside {
+    margin-top: 1rem; 
+}
+.auth-form-policy-text {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+.auth-form-policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.auth-form-controls {
+    margin-top:80px;
+    display:flex;
+    justify-content: flex-end;
+}
+.auth-form-controls-back {
+    margin-right: 8px;
+    background-color: var(--white-color);
+    font-weight:400;
+}
+.auth-form-socials {
+    background-color: #ede8e8;
+    padding:16px 36px;
+    display:flex;
+    justify-content:space-between;
+    margin-top: 22px;
+}
+.auth-form-socials-icon{
+    font-size: 1.8rem;
+}
+.auth-form-controls--facebook {
+    background-color:#3A5A98;
+    color:var(--white-color);
+}
+.auth-form-controls--google {
+    background-color:  #f5f5f5;
+    color: var(--text-color);
+    padding: 4px;
+}
+.auth-form-socials-title {
+    margin: 0 24px;
 }
