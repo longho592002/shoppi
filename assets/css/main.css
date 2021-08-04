@@ -333,3 +333,7 @@ html {
 .auth-form-socials-title {
     margin: 0 24px;
 }
+.auth-form-controls--facebook:hover,
+.auth-form-controls--google:hover {
+    opacity: 0.4;
+}
