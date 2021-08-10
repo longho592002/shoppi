@@ -95,7 +95,6 @@ html {
     display: none;
     animation: FadeIn ease .4s;
 }
-
 .header__qr::before {
     content: "";
     position: absolute;
@@ -113,19 +112,15 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-    .header__qr-link:nth-child(1) {
+.header__qr-link:nth-child(1) {
         margin-left: -12px;
-    }
-
-    .header__qr-link:nth-child(2) {
+}
+.header__qr-link:nth-child(2) {
         margin-right: 10px;
-    }
-
-    .header__qr-link:nth-child(3) {
+}
+.header__qr-link:nth-child(3) {
         margin-left: 24px;
-    }
-
+}
 .header__qr-download-img {
     height: 16px;
     margin: 0 1px;
@@ -207,17 +202,13 @@ html {
     padding: 12px;
     text-decoration: none;
 }
-
 .header__notify-img {
     width: 56px;
     object-fit: contain;
 }
-
 .header__notify-info {
     margin-left: 12px;
-    
 }
-
 .header__notify-name {
     display: block;
     font-size: 1.4rem;
@@ -250,7 +241,8 @@ html {
 
         /* Authen modal  */
 .auth-form {
-    max-width: 500px;
+    min-width: 500px;
+    max-width: 520px;
     background-color:#fff;
     border-radius: 5px;
     overflow: hidden;
@@ -336,4 +328,25 @@ html {
 .auth-form-controls--facebook:hover,
 .auth-form-controls--google:hover {
     opacity: 0.4;
+}
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__help-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+.auth-form__help-separate {
+    display: block;
+    height: 16px;
+    margin: -1px 16px 0 ;
+    border-left: 1px solid #eaeaea;
+}
+.auth-form__help-forget {
+    color: var(--primary-color);
+}
+.auth-form__help-link:hover{
+    opacity: 0.8;
 }

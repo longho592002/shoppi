@@ -131,9 +131,9 @@
                                     Hỗ trợ
                                 </a>
                             </li>
-                            <li class="navbar__list-item">
+                            <li class="navbar__list-item navbar__list-item-link-register">
                                 <a href="" class="navbar__list-item-link navbar__list-item-link--seperate ">Đăng kí</a></li>
-                            <li class="navbar__list-item">
+                            <li class="navbar__list-item navbar__list-item-link-login">
                                 <a href="" class="navbar__list-item-link">Đăng nhập</a></li>
                         </ul>
                     </nav>  
@@ -151,67 +151,114 @@
 
         </footer>
         <!-- Modal layout -->
-        <div class="modal">
-            <div class="modal__overlay">
+          <div class="modal">
+             <div class="modal__overlay">
+            </div> 
+            <div class="modal__body"> 
+                    <!-- Register form  -->
+                      <!-- <div class="auth-form">
+                          <div class="auth-form__register">
 
-            </div>
+                              <div class="auth-form-container">
+                              <div class="auth-form-header">
+                                  <h3 class="auth-form-heading">Đăng kí</h3>
+                                  <span class="auth-form-switch-btn">Đăng nhập</span>
+                              </div>
+      
+                              <div class="auth-form__list-input">
+                                  <div class="auth-form-group">
+                                      <input type="email" class="auth-form-input" placeholder="Email của bạn" >
+                                  </div>
+      
+                                  <div class="auth-form-group">
+                                      <input type="text"  class="auth-form-input" placeholder="Mật khẩu của bạn">
+                                  </div>
+                                  
+                                  <div class="auth-form-group">
+                                      <input type="text" class="auth-form-input" placeholder="Nhập lại mật khẩu" >
+                                  </div>
+                              </div>
+      
+                              <div class="auth-form-aside">
+                                  <p class="auth-form-policy-text">
+                                      Bằng việc đăng kí, bạn đã đồng ý với Shoppi về 
+                                      <a href="" class="auth-form-policy-link">Điều khoản dịch vụ</a> &
+                                      <a href="" class="auth-form-policy-link">Chính sách bảo mật</a>
+                                  </p>
+                              </div>
+      
+                              <div class="auth-form-controls">
+                                  <button class="btn btn--normal auth-form-controls-back">TRỞ LẠI</button>
+                                  <button class="btn btn--primary">ĐĂNG KÍ</button>
+                              </div>
+                              </div>
+                              <div class="auth-form-socials">
+                                  <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--facebook">
+                                      <i class=" auth-form-socials-icon fab fa-facebook-square"></i>
+                                      <span class="auth-form-socials-title">
+                                          Kết nối với Facebook
+                                      </span>
+                                  </a>
+                                  <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--google">
+                                      <i class=" auth-form-socials-icon fab fa-google"></i>
+                                      <span class="auth-form-socials-title" style="padding: 7px;">
+                                          Kết nối với Google
+                                      </span>
+                                  </a>
+                              </div> 
+                          </div>
+                    </div>  -->
 
-            <div class="modal__body">
-            
-
-                    <!-- Authen form  -->
-                    <div class="auth-form">
-                        <div class="auth-form-container">
-                        <div class="auth-form-header">
-                            <h3 class="auth-form-heading">Đăng kí</h3>
-                            <span class="auth-form-switch-btn">Đăng nhập</span>
-                        </div>
-
-                        <div class="auth-form__list-input">
-                            <div class="auth-form-group">
-                                <input type="email" class="auth-form-input" placeholder="Email của bạn" >
+                    <!-- Login form  -->
+                    <div class="auth-form ">
+                        <div class="auth-form__login">
+                            <div class="auth-form-container">
+                            <div class="auth-form-header">
+                                <h3 class="auth-form-heading">Đăng nhập</h3>
+                                <span class="auth-form-switch-btn">Đăng ký</span>
                             </div>
-
-                            <div class="auth-form-group">
-                                <input type="text"  class="auth-form-input" placeholder="Mật khẩu của bạn">
+    
+                            <div class="auth-form__list-input">
+                                <div class="auth-form-group">
+                                    <input type="email" class="auth-form-input" placeholder="Email của bạn" >
+                                </div>
+    
+                                <div class="auth-form-group">
+                                    <input type="text"  class="auth-form-input" placeholder="Mật khẩu của bạn">
+                                </div>
                             </div>
-                            
-                            <div class="auth-form-group">
-                                <input type="text" class="auth-form-input" placeholder="Nhập lại mật khẩu" >
+    
+                            <div class="auth-form-aside">
+                               <div class="auth-form__help">
+                                <a href="https://shopee.vn/buyer/reset" class="auth-form__help-link auth-form__help-forget">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="https://help.shopee.vn/vn/s/" target="blank" class="auth-form__help-link">Cần trợ giúp</a>
+                               </div>
                             </div>
-                        </div>
-
-                        <div class="auth-form-aside">
-                            <p class="auth-form-policy-text">
-                                Bằng việc đăng kí, bạn đã đồng ý với Shoppi về 
-                                <a href="" class="auth-form-policy-link">Điều khoản dịch vụ</a> &
-                                <a href="" class="auth-form-policy-link">Chính sách bảo mật</a>
-                            </p>
-                        </div>
-
-                        <div class="auth-form-controls">
-                            <button class="btn btn--normal auth-form-controls-back">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG KÍ</button>
-                        </div>
-                        </div>
-                        <div class="auth-form-socials">
-                            <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--facebook">
-                                <i class=" auth-form-socials-icon fab fa-facebook-square"></i>
-                                <span class="auth-form-socials-title">
-                                    Kết nối với Facebook
-                                </span>
-                            </a>
-                            <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--google">
-                                <i class=" auth-form-socials-icon fab fa-google"></i>
-                                <span class="auth-form-socials-title" style="padding: 7px;">
-                                    Kết nối với Google
-                                </span>
-                            </a>
+    
+                            <div class="auth-form-controls">
+                                <button class="btn btn--normal auth-form-controls-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                            </div>
+                            <div class="auth-form-socials">
+                                <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--facebook">
+                                    <i class=" auth-form-socials-icon fab fa-facebook-square"></i>
+                                    <span class="auth-form-socials-title">
+                                        Đăng nhập với Facebook
+                                    </span>
+                                </a>
+                                <a href="" class="btn btn--size-s btn--with-icon auth-form-controls--google">
+                                    <i class=" auth-form-socials-icon fab fa-google"></i>
+                                    <span class="auth-form-socials-title" style="padding: 7px;">
+                                        Đăng nhập với Google
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 </body>
 </html>
                                    
