@@ -22,20 +22,18 @@ html {
 }
 .header {
     background-image: linear-gradient(0, #ff6533, #f53d2d);
-    height: 120px;
+    height:var(--header-height);
     font-size: 1.6rem;
-    
 }
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-top: -8px;
 }
 .navbar__list {
-   
     padding-left: 0;
     list-style: none;
     text-decoration: none;
+    margin: 8px  0;    
 }
 .navbar__list-item {
     padding: 0 5px;
@@ -44,11 +42,10 @@ html {
 .navbar__list-item,
 .navbar__list-item-link {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
-    
 }
 .navbar__list-icon {
     padding: 0 2px;
@@ -350,3 +347,81 @@ html {
 .auth-form__help-link:hover{
     opacity: 0.8;
 }
+/* Header with search  */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    width: 200px;
+}
+.header__logo-img {
+    width: 120px;
+    color: var(--white-color);
+}
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+.header__cart {
+    width: 150px;
+    text-align: center;
+    margin-top: 16px;
+}
+.header__cart a {
+    text-decoration: none;
+}
+.header__cart-icon {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+.header__search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 16px;
+    border-radius: 4px;
+}
+.header__search-select {
+    border-left: 1px solid rgb(190, 189, 189);
+    padding-left: 16px;
+}
+.header__search-select-label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.header__search-select-icon {
+    font-size: 1.4rem;
+    color: #8b8b8b;
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+.header__search-btn {
+    border: none;
+    background-color: #f75939;
+    height: 34px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 3px;
+    outline: none;
+    padding: 8px 0;
+}
+.header__search-btn:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.header__search-btn-icon {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
