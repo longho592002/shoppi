@@ -394,7 +394,6 @@ html {
     display: inline-block;
     padding: 8px 12px 0;
     cursor: pointer;
-    
 }
 .header__cart-wrap:hover  .header__cart-list{
     display: block;
@@ -429,18 +428,31 @@ html {
 .header__cart-list--no-cart .header__cart-no-cart-img,
 .header__cart-list--no-cart .header__cart-no-cart-title {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header__cart-no-cart-img {
     width: 28%;
     display: none;
-    margin-left: auto;
-    margin-right: auto;
 }
 .header__cart-no-cart-title {
     padding: 24px 0;
+    display: none;
     font-size: 1.4rem;
     color: var(--text-color);
-    display: none;
+}
+.header__cart-number-product  {
+    position: absolute;
+    left: -2px;
+    margin-top: -5px;
+    padding: 1px 7px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid #ee4d2d;
+    font-weight: 500;
 }
 .header__search-input-wrap{
     flex: 1;
