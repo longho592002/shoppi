@@ -111,7 +111,7 @@ html {
     display: block;
 }
 .navbar-user-menu-item:hover {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(228, 228, 228);
 }
 .navbar-user-menu-item:first-child {
     border-top-left-radius: 2px;
@@ -493,6 +493,8 @@ html {
     z-index: 1;
     display: none;
     cursor: default;
+    animation: FadeIn ease .4s;
+
 }
 .header__cart-list::after {
     content: "";
