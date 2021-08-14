@@ -5,7 +5,9 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
+.m-l-3 {
+    margin-left: 3px;
+}
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -46,10 +48,14 @@ html {
 .navbar__item-user {
     display: flex;
     justify-items: center;
+    position: relative;
+}
+.navbar__item-user:hover  .navbar-user-menu {
+    display: block;
 }
 .navbar-user-img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
 }
 .navbar-user-name {
@@ -57,6 +63,63 @@ html {
     font-size: 1.4rem;
     font-weight: 200;
     margin-top: 2px;
+}
+.navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    top: 144%;
+    right: 0;
+    width: 160px;
+    background-color: var(--white-color);
+    list-style: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgb(218, 216, 216);
+    display: none;
+    animation: FadeIn ease .4s;
+}
+.navbar-user-menu::before{
+    content: "";
+    position: absolute;
+    border-width: 18px 28px;
+    top: -26px;
+    right: 4px;
+    border-style:solid ;
+    z-index: -1;
+    border-color:  transparent transparent var(--white-color) transparent ;
+}
+.navbar-user-menu::after{
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 16px;
+    left: 0;
+    top: -8px;
+    display: block;
+    margin-left: 20px;
+}
+.navbar-user-menu-item {
+    
+}
+.navbar-user-menu-item a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.9;
+    display: block;
+}
+.navbar-user-menu-item:hover {
+    background-color: rgb(241, 241, 241);
+}
+.navbar-user-menu-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.navbar-user-menu-item:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 .navbar__list-item,
 .navbar__list-item-link {
