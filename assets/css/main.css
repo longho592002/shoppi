@@ -59,9 +59,9 @@ html {
     border-radius: 50%;
 }
 .navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 2px;
 }
 .navbar-user-menu {
@@ -98,8 +98,9 @@ html {
     display: block;
     margin-left: 20px;
 }
-.navbar-user-menu-item {
-    
+
+.navbar-user-menu-item--separate {
+    border-top:1px solid rgba(0, 0, 0, 0.05) ;
 }
 .navbar-user-menu-item a {
     text-decoration: none;
@@ -124,10 +125,10 @@ html {
 .navbar__list-item,
 .navbar__list-item-link {
     display: inline-flex;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
 }
 .navbar__list-icon {
     padding: 0 2px;
@@ -214,7 +215,8 @@ html {
     width: 404px;
     background-color: var(--white-color);
     border: 1px solid #D3D3D3;
-    transform-origin: calc(100% - 20px) top;
+    border-radius: 1px solid rgba(0, 0, 0, 0.1);
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
@@ -442,6 +444,10 @@ html {
     width: 200px;
     padding-right: 2.5rem;
 }
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
 .header__logo a{
     width: 200px;
     padding-right: 4.8rem;
@@ -478,6 +484,7 @@ html {
     display: inline-block;
     padding: 8px 12px 0;
     cursor: pointer;
+    margin-bottom: 12px;
 }
 .header__cart-wrap:hover  .header__cart-list{
     display: block;
@@ -560,7 +567,7 @@ html {
 /* search history  */
 .header__search-history {
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 5px);
     width: calc(100% - 16px);
     box-shadow: 0 1px 5px rgb(218, 216, 216);
     background-color: #fff;
@@ -644,7 +651,7 @@ html {
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 180%;
+    top: 200%;
     width: 128px;
     list-style: none;
     border-radius: 3px;

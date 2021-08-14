@@ -2,6 +2,7 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color: #333;
+    /* --primary-color: rgb(9, 230, 9); */
     --primary-color: #ff6533;
     --boder-color: #e8e8e8; 
     --header-height: 120px;
@@ -40,6 +41,14 @@ html {
 .grid__row {
     display:flex;
     flex-wrap:wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* Test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
 }
 @keyframes FadeIn {
     from {
