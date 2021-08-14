@@ -3,6 +3,7 @@
     --black-color:#000;
     --text-color: #333;
     --primary-color: #ff6533;
+    --boder-color: #e8e8e8; 
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
@@ -78,13 +79,13 @@ html {
     --growth-from:0.7;
     --growth-to:1;
     margin: auto;
-    z-index: 1;
+    z-index: 2;
     max-width: 36%;
     animation: Growth linear 0.2s;
 }
 /* Button style */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height:34px;
     text-decoration: none;
     border: none;

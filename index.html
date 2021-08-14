@@ -19,7 +19,7 @@
     
 
         <div class="app">
-            <header class="header ">
+            <header class="header">
                 <div class="grid">
                     <nav class="navbar">
                         <ul class="navbar__list">
@@ -47,7 +47,7 @@
                                     </div>
                                 </a></li>
                             <li class="navbar__list-item">
-                                <a href="" class="navbar__list-item-link  ">
+                                <a href="" class="navbar__list-item-link">
                                         <span class="navbar__list-item-link--no-pointer">Kết nối</span>
                                         <a href="" class=" navbar__list-icon">
                                             <i class="fab fa-facebook navbar__list-icon"></i>
@@ -62,11 +62,11 @@
                         <ul class="navbar__list" >
                             <li class="navbar__list-item">
                                 <a href="" class="navbar__list-item-link ">
-                                    <i class="far fa-bell  "></i>
+                                    <i class="far fa-bell navbar__list-icon"></i>
                                     Thông báo
                                 </a>
                                 <div class="header__notify">
-                                    <header class="header__notify-header">
+                                    <header class="header__notify-header ">
                                         <h3>Thông báo mới nhận</h3>
                                     </header>
                                     <ul class="header__notify-list">
@@ -127,15 +127,19 @@
                             </li>
 
                             <li class="navbar__list-item">
-                                <a href="" class="navbar__list-item-link">
-                                    <i class="far fa-question-circle "></i>
+                                <a href="" class="navbar__list-item-link ">
+                                    <i class="far fa-question-circle navbar__list-icon "></i>
                                     Hỗ trợ
                                 </a>
                             </li>
-                            <li class="navbar__list-item navbar__list-item-link-register">
+                            <!-- <li class="navbar__list-item navbar__list-item-link-register">
                                 <a href="" class="navbar__list-item-link navbar__list-item-link--seperate ">Đăng kí</a></li>
                             <li class="navbar__list-item navbar__list-item-link-login">
-                                <a href="" class="navbar__list-item-link">Đăng nhập</a></li>
+                                <a href="" class="navbar__list-item-link">Đăng nhập</a></li> -->
+                            <li class="navbar__list-item navbar__item-user">
+                                <img src="./assets/img/user 3.jpg" alt="" class="navbar-user-img">
+                                <span class="navbar-user-name">Nguyễn Hồ Long</span>
+                            </li>
                         </ul>
                     </nav>  
                     <!-- Header with search  -->
@@ -201,7 +205,7 @@
                                     <span class="header__cart-number-product">3</span>
                                 </a>
                                 <!-- No cart: header__cart-list--no-cart -->
-                                <div class="header__cart-list ">
+                                <div class="header__cart-list">
                                     <img src="./assets/img/giohangtrong.png"  class="header__cart-no-cart-img" alt="">
                                     <p class="header__cart-no-cart-title">Chưa có sản phẩm</p>
 
@@ -214,7 +218,7 @@
                                                 <div class="header__cart-item-head">
                                                     <h5 class="header__cart-item-name">Điện thoại iphone 13 Pro Max</h5>
                                                     <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.000.000</span>
+                                                        <span class="header__cart-item-price">12.000.000</span>
                                                         <span class="header__cart-item-multiphy">x</span>
                                                         <span class="header__cart-item-qnt">1</span>
                                                     </div>
@@ -226,10 +230,44 @@
                                             </div>
                                         </li>
                                         <li class="header__cart-item">
-                                            <img src="./assets/img/iphone-12-pro-max.jpg" alt="" class="header__cart-img">
+                                            <img src="./assets/img/macbookpro16_ycan.jpg" alt="" class="header__cart-img">
                                             <div class="header__cart-item-info">
                                                 <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-name">Điện thoại iphone 13 Pro Max</h5>
+                                                    <h5 class="header__cart-item-name">Macbook M1 2021</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">22.000.000</span>
+                                                        <span class="header__cart-item-multiphy">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-qnt">Phân loại hàng: XLM_023598568</span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/imac-24-inch-500x500-1.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">iMac M1 2021</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">32.000.000</span>
+                                                        <span class="header__cart-item-multiphy">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-qnt">Phân loại hàng: XLM_023598568</span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/apple-watch.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Apple Watch 2021</h5>
                                                     <div class="header__cart-item-price-wrap">
                                                         <span class="header__cart-item-price">2.000.000</span>
                                                         <span class="header__cart-item-multiphy">x</span>
@@ -243,10 +281,10 @@
                                             </div>
                                         </li>
                                         <li class="header__cart-item">
-                                            <img src="./assets/img/iphone-12-pro-max.jpg" alt="" class="header__cart-img">
+                                            <img src="./assets/img/airpods-2.jpg" alt="" class="header__cart-img">
                                             <div class="header__cart-item-info">
                                                 <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-name">Điện thoại iphone 13 Pro Max</h5>
+                                                    <h5 class="header__cart-item-name">Airpod Pro 2021</h5>
                                                     <div class="header__cart-item-price-wrap">
                                                         <span class="header__cart-item-price">2.000.000</span>
                                                         <span class="header__cart-item-multiphy">x</span>
@@ -259,29 +297,9 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="header__cart-item">
-                                            <img src="./assets/img/iphone-12-pro-max.jpg" alt="" class="header__cart-img">
-                                            <div class="header__cart-item-info">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-name">Điện thoại iphone 13 Pro Max</h5>
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.000.000</span>
-                                                        <span class="header__cart-item-multiphy">x</span>
-                                                        <span class="header__cart-item-qnt">1</span>
-                                                    </div>
-                                                </div>
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-qnt">Phân loại hàng: XLM_023598568</span>
-                                                    <span class="header__cart-item-delete">Xóa</span>
-                                                </div>
-                                            </div>
-                                        </li>
-
                                         
-                                        <button class="btn btn--primary">Xem tất cả</button>
                                     </ul>
-
-                                    
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">Xem tất cả</a>
                                 </div>
                             </div>
                         </div>
@@ -299,12 +317,12 @@
 
         </footer>
         <!-- Modal layout -->
-          <!-- <div class="modal">
+           <!-- <div class="modal">
              <div class="modal__overlay">
             </div> 
-            <div class="modal__body">  -->
+            <div class="modal__body">   -->
                     <!-- Register form  -->
-                      <!-- <div class="auth-form">
+                       <!-- <div class="auth-form">
                           <div class="auth-form__register">
 
                               <div class="auth-form-container">
@@ -355,10 +373,10 @@
                                   </a>
                               </div> 
                           </div>
-                    </div>  -->
+                    </div>   -->
 
                     <!-- Login form  -->
-                    <!-- <div class="auth-form ">
+                     <!-- <div class="auth-form ">
                         <div class="auth-form__login">
                             <div class="auth-form-container">
                             <div class="auth-form-header">
@@ -405,8 +423,8 @@
                             </div>
                         </div>
                     </div> -->
-                <!-- </div>
-            </div> -->
+                 <!-- </div>
+            </div>  -->
 </body>
 </html>
                                    
