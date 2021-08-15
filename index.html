@@ -323,30 +323,77 @@
                 </div>
             </header>
         
-            <div class="container">
-                <div class="grid__row">
-                    <div class="grid__column-2">
-                        <nav class="category">
-                            <h3 class="category-heading">
-                                <i class="fas fa-list-ul"></i>
-                                Danh mục
-                            </h3>
-                            <ul class="category-list category-list-active">
-                                <li class="category-list-item">
-                                    <a href="#" class="category-item-link">Điện thoại</a>
-                                </li><li class="category-list-item">
-                                    <a href="#" class="category-item-link">Laptop</a>
-                                </li><li class="category-list-item">
-                                    <a href="#" class="category-item-link">Thiết bị điện tử</a>
-                                </li><li class="category-list-item">
-                                    <a href="#" class="category-item-link">Đồ gia dụng</a>
-                                </li><li class="category-list-item">
-                                    <a href="#" class="category-item-link">Quần áo</a>
-                                </li><li class="category-list-item">
-                                    <a href="#" class="category-item-link">Nhà sách</a>
-                                </li>
-                            </ul>
-                        </nav>
+            <div class="app__container">
+                <div class="grid">
+                    <div class="grid__row app_content">
+                        <div class="grid__column-2">
+                            <nav class="category">
+                                <h3 class="category-heading">
+                                    <i class="fas fa-list-ul category-heading-icon"></i>
+                                    Danh mục
+                                </h3>
+                                <ul class="category-list category-list-active">
+                                    <li class="category-list-main">
+                                        <a href="#" class="category-list-main-item">Sản Phẩm</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Điện thoại</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Laptop</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Thiết bị điện tử</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Đồ gia dụng</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Quần áo</a>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <a href="#" class="category-item-link">Nhà sách</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="grid__column-10">
+                            <div class="home-filter">
+                                <span class="home-filter__label">Sắp xếp</span>
+                                <button class="home-filter__btn btn">Phổ biến</button>
+                                <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="home-filter__btn btn">Bán chạy</button>
+
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="fas fa-chevron-down select-input__icon"></i>
+                                    <!-- List price option  -->
+                                    <ul class="select-input-list">
+                                        <li class="select-input-item">
+                                            <a href="" class="select-input-link">Giá: Thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input-item">
+                                            <a href="" class="select-input-link">Giá: Cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="home-filter__page">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">
+                                            1 
+                                            <span>/14</span>
+                                        </span>
+                                    </span>
+                                    <div class="home-filter__page">
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="fas fa-chevron-left"></i>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
