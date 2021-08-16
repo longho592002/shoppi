@@ -382,15 +382,367 @@
                                     <span class="home-filter__page-num">
                                         <span class="home-filter__page-current">
                                             1 
-                                            <span>/14</span>
                                         </span>
+                                        <span>/14</span>
                                     </span>
-                                    <div class="home-filter__page">
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                            <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                        </a>
                                         <a href="" class="home-filter__page-btn">
-                                            <i class="fas fa-chevron-left"></i>
-                                            <i class="fas fa-chevron-right"></i>
+                                            <i class="home-filter__page-icon fas fa-chevron-right"></i>
                                         </a>
                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Grid => Row => Column  -->
+                            <div class="home-product">
+                                <div class="gird__row">
+                                    <div class="grid__column-2-4">
+                                        <!-- Product Item -->
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                            <h4 class="home-product-item__name">
+                                                [Mã ELMALL1TR giảm 5% đơn 3TR] Apple iPhone 12 Pro Max 128GB
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old-sub">đ</span>
+                                                <span class="home-product-item__price-old">
+                                                    32.00...
+                                                </span>
+
+                                                <span class="home-product-item__price-new-sub">đ</span>
+                                                <span class="home-product-item__price-new">
+                                                   12.000.000đ
+                                                </span>
+                                                <svg class="home-product-item__price-delivery" height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
+                                                    <g fill="none" fill-rule="evenodd" transform="">
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
+                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
+                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
+                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <path
+                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item-action-icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <!-- <i class="fas fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-rating">
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                </div>
+                                                <div class="home-product-item-quantity-sold">
+                                                    <span class="home-product-item-quantity-sold-label">Đã bán 2,5k</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-area">TP Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check home-product-item__favorite-icon"></i>
+                                                <span class="home-product-item__favorite-label">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__discount">
+                                                <span class="home-product-item__discount-percent">15%</span>
+                                                <span class="home-product-item__discount-label">Giảm</span>
+                                            </div>
+                                            <div class="home-product-item__brand-stuff">
+                                                <span class="home-product-item__brand-stuff-label">Hàng hiệu</span>
+                                                <span class="home-product-item__brand-stuff-percent">-50%</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                            <h4 class="home-product-item__name">
+                                                [Mã ELMALL1TR giảm 5% đơn 3TR] Apple iPhone 12 Pro Max 128GB
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old-sub">đ</span>
+                                                <span class="home-product-item__price-old">
+                                                    32.00...
+                                                </span>
+
+                                                <span class="home-product-item__price-new-sub">đ</span>
+                                                <span class="home-product-item__price-new">
+                                                   12.000.000đ
+                                                </span>
+                                                <svg class="home-product-item__price-delivery" height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
+                                                    <g fill="none" fill-rule="evenodd" transform="">
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
+                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
+                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
+                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <path
+                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item-action-icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <!-- <i class="fas fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-rating">
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                </div>
+                                                <div class="home-product-item-quantity-sold">
+                                                    <span class="home-product-item-quantity-sold-label">Đã bán 2,5k</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-area">TP Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check home-product-item__favorite-icon"></i>
+                                                <span class="home-product-item__favorite-label">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__discount">
+                                                <span class="home-product-item__discount-percent">15%</span>
+                                                <span class="home-product-item__discount-label">Giảm</span>
+                                            </div>
+                                            <div class="home-product-item__brand-stuff">
+                                                <span class="home-product-item__brand-stuff-label">Hàng hiệu</span>
+                                                <span class="home-product-item__brand-stuff-percent">-50%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISERESFRESGRgYEhIYGRgSEhISERgVGBgaGhgYGBkcIS4nHB4rHxgYJjgmKy8xNTU1HCQ7QDszPy40NTEBDAwMEA8QGBISHjQrISQxNDQ0NDQ0NDQ0NDQxNDQ0NDExMTQ0ND80NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDExMf/AABEIAP8AxQMBIgACEQEDEQH/xAAcAAEAAAcBAAAAAAAAAAAAAAAAAQIDBAUGCAf/xABJEAACAQICBAUQCAQGAwEAAAABAgADEQQhBRIxQQZRYXGBBxMUIjIzNVJykZKhsbLB0RUXQlNUs9LhYmOCkxYjJXPC8ESi4kP/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHxEBAQEAAQUBAQEAAAAAAAAAAAERAhIhMUFRYXED/9oADAMBAAIRAxEAPwD2aIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgJTqVVUXYgDjJtI1HCqWJsACSeIDMzFr29qri5PcIc1Ubst5PH+1guPpJT3KVHHGqEj12kez8r9Zr/ANvP2zDY/hJhqL9bqYlEfK6Ldyt9mtbJem0ymErdcVXSoGVhcEAEHmMmir9Ifya/9sfOPpD+TX/tj5yYqwz1x6P7ymlYk2V1PIVK35jGib6Q/kV/7f7yH0h/Ir/2/wB5XpVNbkI2g7RPOeqpwybCIMPRI649xe1wBlrMRsNrgAHab37mxaNsxnC7C0RdyyjjdqSL0FnAPRLT6xdF/ik9On+qc34hnqMXquzs2ZLEsfOZRNNeL1mXE10r9Yui/wAUnp0/1SP1iaL/ABVP06f6pzHUWxykkK6f+sTRf4qn6dP9Uj9Yei/xVP06f6pzAozzyk2ovjeowOnfrD0X+Lp+nT/VH1h6L/F0/Tp/qnMiIDe7WyyNjmeKUoHUH1h6L/F0/Tp/qkfrA0X+Lpemn6pzDSAJzlcUl4vWYxLcdWaO0/hcQL069NvJZWHnBI9cy05Ew1SpScVKNRkYbCpIPNzchynvHUu4ZHH0jSq267TsDuvkSCBxEBstxU7iABLr0OIiFIiICIiBY6WJ6y9t5UedgD6rzE8J8c2HwuIqJbWSnZL7AxFlPNciZfSlut5+MnJ9oTFadwi1qdWk2x9ZTxi67ZKOasTXerUqMzEgFz2xJOVySeNjvO8mbj1MNMVcNpGlhlY9brOUdL3UPqsVcDcwKgX3gm/JiNOcFsTQqv2mRYnY2oeVTa1jtsbW2Z7Zs/U04M1FxK4l1N0DamTBFZlKlySBcgFrAZXN5rZiPaKvbplvAPxlEJcpYEau2+U1Lh1w0Gj0WnTQPVa4RSSEGqBdnIz1RrKLAgk3zFjNG0d1VsclQNWShUp37ZUQ03C/wNrbfKB+Mx073alx7axs6HjJU81iR7D55zl1SMSamlat/sqg5tZeuW87mdB4LGpXp0K1M3RwjqbWJRlJFxuO63GDOc+HxH0ribC2VHff/wDGnLErAs0U6bOdVRc/DjJ3DlhELGw6SdgHGZXaoFGquzed7HjPymmFVKVNNtnbpCD4npsOSUGVPEA88mwuHerUWmgJZjkNnKSSdgAuSTsE2rDYGhhACQtSqNrsLop/lqeLxiL8Wrslk1nly6f613DaGrVRrJh2KnYxGrTPM7EA+eXH+GcT9wvRWoE+bXmVxOlWYkliec3luukDxzeRz6+f4w2K0c9EgVKDrc2BYMFJ/hbYegynTCA5op57/AzbMLpYgFSQVIsVYBkYcRU5ES30joOnWU1MMuq4uWogkq3H1u+xv4dh3WyBl4/GuP8ApfFa++FVs6Zz8QnP+k7+Y58plmD/AN3ydXlZiKm3J9x8bkb5/wDRl0Ulabh1KMQU0sgBydLEbu6U39R85ml7MptvUuI+l6Nx9lt9twkqzy6ViIkaIiICIiBY6W73/UnvCWeN7o+X/wAZeaW73/UnvCa7w3qtTweKdSQdUjWGRVWWzMDususeiSjWdO8P8JQc01TrpG/W1UPk2ViRltsAdxMyXBbhlhsYRTUdbfcpIKnkBsM+QgdM8Je7PWZsmBbtduYNgvMLW6Jd6HrNTxaGmxyc2I/huVPnCma6e2pvfG79VPR79fWvqkqgZWsCdVXOsreTcspPIJoZdqhWmihmYgKtNLuxOQFhmx/binROPSk1I1Kp1QiFi4yZRbPn5s75ZTWOD1bR9TEdbQOjvexNKhS19pI16Y1r2ByJF/VEtksM762TghhGw+CwtFiL00RGN7rrgOz2O8BnK/0zwjh2wOk8SRmCKJFt4NGnadFqh1AoUCxICqbiwDBbZDdbLdsnOvDVv9UxBse5o7doPWae2Zi1hmOqNUdPPxdEoM0ixlXR9IPVRW7nWBbyVzb1C3TNI2jRlIYXD6xH+bVUFjvVDYqg4r5MeWw+zMbisUSdsY7SOuxJO0mWLPeXfTlOPfag9UyQVDJWkohvF3TrGZXA40qQbzB05cJVC75ZWbxlX/CfDq2rikAGs2rUA2a5zD/1WN+UX+1MArTO0sUro9Inu0IF9mttQ+kBNfEl8tcfGLh+2GtvG3lG4zZupd4Xo+S3sE1am1jNq6mAtpeiP4W9gkqx0tERI0REQERECx0t3r+pPeEoaSwi1UdHF1dSrC18jJ9NMQiAWzqKDfizOXSBLoyUeFaf6m1dajNSDMpOTqdYkbtcHabb7i+8XuTkOCPAJ6VRatYHIg2ObG2YHIL5z2BqKnd5spDsdeXzmBr+lMB2Rh6tC5XXSwaxNmBBU23i4GU1Tg1wJxVPFU6tZqYSm2uOtszF2Hc7VFlvY58VrZ3HpYw68vnMmGHXi85JgUqK5632VB6TvM5q4dNfSeJPGtE55HOjTnTtQdo3kt7JzDw88J4nmo/k04hWBJkaFTVJPJaSGSGaRWepeQWoRKV5cUKGt2zGy+sniHzkMVVfWEiBK1KqqkFVA9bdJ2y+qVCqa9zna2e281IzWKqVNXIbZb9cl6wR+6FiftKADflGwyxr0yhsegjYRxiRYqpWIlNmuSeMkyleTCFVFM27qXn/AFeh5LewTTxNq6mjldJ0mFrhKhF9lwuV5KkdOREQ0REQEREDGac7hP8AdX2NLsyz053tP9xfY0vDJRCRkIgREiJCRECDrdWHGCPVOYOHd/pLEXFjq0LjbY9Zp5Tp+obKx4gfZOX+HfhLEXN+1oZ8f+TTziFa+ZIZMZKZpIAS4NXIAbBLYGRvIq7pOCdvn+cyeIH+VTXemvrXytdu1v0TA3lxVxDMiKWJAvkTcC2Q9UsqWItVF+P1CQeprLbizHxlveAZFBJxJBJhCJhNp6m3hKn/ALdT3Zqwm09TbwlT/wBup7sVI6eiIhoiIgIiIGM02hNNTlk6E82Yy6SJdGUdMd6PlJ7wlYyUIiIEZESEQIVe4byW9k5g4e+E8TzUfyac6hIvlOXuHqgaSxAGwCgBzCjTiDXjJTImX+isAa72LaqKNZ3tfVXk42OwD95akNE6Jr4upqUULEZsxsqIvjMxyUf9E3XAcFNH4cA4mo1d96U2NOgDxa3dNz9rzTHVdMpTQUKC6lMbge2dvHdvtMf2FhMY+kSd81JPaW309AoaWwlHKjhMMnKtJC/SxBJ88uP8W3yKoRxFFI81p5n2Yx447Kbll7fInTfr0DEYnR2IuK2Cw5vtZEFJ/SSxmA0lwKoVAXwVftsz1nEMoJ5EqZDoYDnmvjHESvR0my7GMnb1MWbPbA4rCvSdqdRGRlNmVwQwPNKIm64jGUsagp1yAyi1Otbt1O5W8ZOTdtHLqGKw7UnZGFmU2O8chB3gjMGZ/KvlIJtfUzQtpOkotcpUAvsuRbOakDNv6lnhahzN8IpHTUREKREQEREDH6a7yfKT3hK5lDTXeT5Se8JWMlEYkIgTRISVz2p5oDronMXD8/6nieaj+TTnSoM5q4f+EsTzUPyacQa5Mq1fraCkvHrMfGb5DZ55jqPdA8Wfm2SLvcyoqmoTI64Eoa0lJlVc9fMh18y3vF4Fz1+NfilteRBgXK1iJWxlXrtME90gtfeU4ug+oyx1ryek+fqPNCKE3DqWeFaHM3wmoEWym39SzwrQ5m+Eium4iICIiAiIgY/TXeT5Se8JVMpaa7yfKT3hJyZKJrxeS3i8CaRkt4gWzCxtObOH/hLE81D8mnOnZzFw/wDCeJ5qP5KRBrynbzSBMLIGULyaSSKmBMFJlVqJttB5BIBxs2SJyAN5RStBk7ODz8comQRBkwMkkywIvtM27qWeFaHM3wmozb+pZ4WoczfCEdNREQpERAREQMfprvJ8pPeEiTIaa7yfKT3hBMlEbxeQvECa8jeSXkbwJ7zmPh/4TxPNR/JSdNAzmXh94TxPNR/JpxBrsGRMhKiFpFVlSnS1r8m2VlFsh+8GqaUCduUuGpAi1xCrI6hlxNWjUSP2lMiXzrvlJkDfOMXVrJhJmSxsdshIFpt3Ut8LUOZvhNStNt6l3hahzN8II6aiIhSIiAiIgY/TXeT5Se8JAyOmu8nyk94SU7ZKIxIRAmiSyN4Ebzmjh74TxPNR/JSdL3nNXDnwpiOaj+SkQa6RJbSqySXVmkV8La1ibZ578jLo0gm2Y9bg3EvUq69gTYgAW3G2QtLEqXXO7KRLGV0w5vslZsNlKzsWS1NxlQ0RYtew47b+aTGhLetiDbUU3F73tv5JFi3xFtYc2cpgSOrJgsjSFptnUuH+rUOZvhNXVJtHUvN9LUOZvhIkdMxEQ0REQEREDH6a7y3lJ7wkh2yfTXeW8pPeEpHaZKIxeQiBNeLyWRvAmvOaeH3hPE81H8mnOlJzXw98J4nmo/k04gxVI64/iG3lHHJSktlYqQQbEbJlMOy1chYP4u48q/KaRZ6kakvWw5G6S9alTU2FxDraxuOJgCJf1MW+r3FMcuqfiZa4ehnMnicN/l0zbbreo2lZuMBiHZjmejYPMJR1JevRzkooyNRahJOlO8vKeFJ3S3xWIVbqhud7DZzL85EW+IYDtB08/FNm6l3hahzN8JqQm29S7wtQ5m+EjUdNREQpERAREQMfprvLeUnvCUW2yrpvvLeUvtEonbJRGJCIEYkIgTTmzh54TxPNR/JpzpKc3cO/CeJ8mj+TTiDXyJACVCIRc7TSL/DaVYdrUXXHHezgc/2unzzKUKmGqdzVVT4tTtD5z2p88wGpIinKlkbrgdDs1iouONbMPOJl8ToeoaYGocuQzzzD07G4yPGMj5xMnXepqZvUtyu1vbKxYyOL0ZqXLMiDjdlQeuYuvi8NT2MXbiQWTpc/AGYp6WZNpSKSNSK2L0i9TtclXxVyHSdp9nJLG0rakltI0gBNs6l/hahzN8JqqrNr6mHhehzN8IqR0xERI0REQEREDH6Za1FjYbU257WAludsu9KUi9F1G218tvakNYcuUsaVTWVW4x69/rkoniIgIiIEZzlw7N9KYg2A7WhsFh3mnOjJ4N1U9HtRx4q27V11b/xJlb0Ch6Yg0/VjVk0nUg7cvZ+02wuMOgcfxDaOPlErphs85aBGUgi4O0EfCZfB4+m1lqqQfHUXHSu7oln6zb8XGB0dc2tMxiNF9ouW4yrotVNtRqdRd2q4Djk3+YiZrEC6AdbqHkLKo6Tn7J0nTnlx5Xlrz/E4HVud0sexSd02fSJpqb1KlNbbEQ67eYXN+UzXsbj9a601Krxnuz8pzuenXjb7Y7E2B1R0n4SiqSv1qwuchy/CSs24fvJjepbTaepebaXo5A9qwzF9thNWAm+dRzRrVdINXsdVFAvbLWuG9i/+wkqx0FERI0REQEREBMPiMG9Ni1NbqTcoMip3leTk83JmIga39IUwdVm1W3q2TDnG6TdnUvHHrmdNJT9lfMJDsdPu19FZMGD7OpeOPXHZ1P7weuZvsWn92noL8o7Ep/dp6C/KMGE7Op/eD1zCcJ9GYXH0WpuwvuIuGBF7MptkRc8hBIO3LduxKf3aegvyjsSn92noL8owc06S4E4ugxCGnUW+XbrTf0XI/wDUmWA4M6QN7YV8hfav6p1N2Mn3aeisdjp92vorKmOXE4P6RXZhn5u1I8xMnbQmkT/4Z6B/9TqDsdPEX0RIdjJ4ieisu0yOXvoHSP4RvMP1SdtC6SIscK5HETce9Onuxaf3aegvyjsSn93T9BflG0yOXxoHSH4M+Yfqk30HpG2WDI5bD4tadPdiU/u09BflHYtP7tPRX5RtMjlpuDukSbnC1CeWx+Mf4b0h+Ffp1R/ynUvYyeInorI9jp4i+iJDI5x0H1PMfi3AYBEv2xDI7eZTYHyiJ7rwV4N0dHYdaVMZ27ZtpJO0333O/LYNgAAzioBsAHMAJPCkREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/Z);"></div>
+                                            <h4 class="home-product-item__name">
+                                                [Mã ELMALL1TR giảm 5% đơn 3TR] Apple iPhone 12 Pro Max 128GB
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old-sub">đ</span>
+                                                <span class="home-product-item__price-old">
+                                                    32.00...
+                                                </span>
+
+                                                <span class="home-product-item__price-new-sub">đ</span>
+                                                <span class="home-product-item__price-new">
+                                                   12.000.000đ
+                                                </span>
+                                                <svg class="home-product-item__price-delivery" height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
+                                                    <g fill="none" fill-rule="evenodd" transform="">
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
+                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
+                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
+                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <path
+                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item-action-icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <!-- <i class="fas fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-rating">
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                </div>
+                                                <div class="home-product-item-quantity-sold">
+                                                    <span class="home-product-item-quantity-sold-label">Đã bán 2,5k</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-area">TP Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check home-product-item__favorite-icon"></i>
+                                                <span class="home-product-item__favorite-label">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__discount">
+                                                <span class="home-product-item__discount-percent">15%</span>
+                                                <span class="home-product-item__discount-label">Giảm</span>
+                                            </div>
+                                            <div class="home-product-item__brand-stuff">
+                                                <span class="home-product-item__brand-stuff-label">Hàng hiệu</span>
+                                                <span class="home-product-item__brand-stuff-percent">-50%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                            <h4 class="home-product-item__name">
+                                                [Mã ELMALL1TR giảm 5% đơn 3TR] Apple iPhone 12 Pro Max 128GB
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old-sub">đ</span>
+                                                <span class="home-product-item__price-old">
+                                                    32.00...
+                                                </span>
+
+                                                <span class="home-product-item__price-new-sub">đ</span>
+                                                <span class="home-product-item__price-new">
+                                                   12.000.000đ
+                                                </span>
+                                                <svg class="home-product-item__price-delivery" height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
+                                                    <g fill="none" fill-rule="evenodd" transform="">
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
+                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
+                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
+                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <path
+                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item-action-icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <!-- <i class="fas fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-rating">
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                </div>
+                                                <div class="home-product-item-quantity-sold">
+                                                    <span class="home-product-item-quantity-sold-label">Đã bán 2,5k</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-area">TP Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check home-product-item__favorite-icon"></i>
+                                                <span class="home-product-item__favorite-label">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__discount">
+                                                <span class="home-product-item__discount-percent">15%</span>
+                                                <span class="home-product-item__discount-label">Giảm</span>
+                                            </div>
+                                            <div class="home-product-item__brand-stuff">
+                                                <span class="home-product-item__brand-stuff-label">Hàng hiệu</span>
+                                                <span class="home-product-item__brand-stuff-percent">-50%</span>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                            <h4 class="home-product-item__name">
+                                                [Mã ELMALL1TR giảm 5% đơn 3TR] Apple iPhone 12 Pro Max 128GB
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old-sub">đ</span>
+                                                <span class="home-product-item__price-old">
+                                                    32.00...
+                                                </span>
+
+                                                <span class="home-product-item__price-new-sub">đ</span>
+                                                <span class="home-product-item__price-new">
+                                                   12.000.000đ
+                                                </span>
+                                                <svg class="home-product-item__price-delivery" height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping">
+                                                    <g fill="none" fill-rule="evenodd" transform="">
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect>
+                                                        <rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect>
+                                                        <rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect>
+                                                        <rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect>
+                                                        <circle cx="8" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <circle cx="15" cy="10" fill="#00bfa5" r="2"></circle>
+                                                        <path
+                                                            d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path>
+                                                        <circle cx="8" cy="10" fill="#047565" r="1"></circle>
+                                                        <circle cx="15" cy="10" fill="#047565" r="1"></circle>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item-action-icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <!-- <i class="fas fa-heart"></i> -->
+                                                </span>
+                                                <div class="home-product-item-rating">
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                    <i class="fas fa-star home-product-item-rating-icon"></i>
+                                                </div>
+                                                <div class="home-product-item-quantity-sold">
+                                                    <span class="home-product-item-quantity-sold-label">Đã bán 2,5k</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-area">TP Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check home-product-item__favorite-icon"></i>
+                                                <span class="home-product-item__favorite-label">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__discount">
+                                                <span class="home-product-item__discount-percent">15%</span>
+                                                <span class="home-product-item__discount-label">Giảm</span>
+                                            </div>
+                                            <div class="home-product-item__brand-stuff">
+                                                <span class="home-product-item__brand-stuff-label">Hàng hiệu</span>
+                                                <span class="home-product-item__brand-stuff-percent">-50%</span>
+                                            </div>
+                                        </div>
+
+                                       
+
+                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
