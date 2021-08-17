@@ -773,7 +773,7 @@ html {
 /* App Container  */
 .app__container {
     height: 1000px;
-    background-color: rgb(172, 16, 16);
+    background-color: #f5f5f5;
 }
 .app_content {
     padding-top: 28px;
@@ -930,21 +930,22 @@ html {
     font-size: 1.4rem;
 }
 .home-product {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: block;
+    margin-right: -5px;
+    margin-left: -4px;
 }
 .home-product-item {
     margin-top: 10px;
     background-color: var(--white-color);
     min-width: 192px;
-    margin: 10px 5px 0;
+    margin: 10px 4px 0 ;
     border-radius: 2px;
     flex-wrap: wrap;
+    cursor: pointer;
+    position: relative;
 }
-.home-product-item:nth-child(1) {
-    margin-left: -5px;
-    padding-left: 0;
-}
+
 .home-product-item__img {
     padding-top: 100%;
     background-repeat: no-repeat;
@@ -958,7 +959,7 @@ html {
     color: var(--text-color);
     line-height: 1.8rem;
     height: 3.6rem;
-    margin: 10px 10px;
+    margin: 10px 10px 0;
     overflow: hidden;
     display: block;
     display: -webkit-box;
@@ -969,10 +970,10 @@ html {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    
+    margin-top: 6px;
 }
 .home-product-item__price-new-sub {
-    margin-left: 10px;
+    margin-left: 12px;
     font-style: 0.75rem;
     color: var(--primary-color);
     text-decoration: underline;
@@ -987,58 +988,130 @@ html {
     font-size: 1.4rem;
     color: #a3a3a3;
     text-decoration: line-through;
-    /* margin: 0; */
 }
 .home-product-item__price-new {
     font-size: 1.5rem;
     color: var(--primary-color);
-    /* margin: 0; */
 }
-.home-product-item-action {
+.home-product-item__price-delivery {
+    margin-left: 3px;
+}
+.home-product-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 12px 0;
+}
+.home-product-item__action__like {
+    
 
 }
-.home-product-item-action-icon {
 
+.home-product-item-action__like-icon-fill {
+   padding-top: 4px;
+   color: var(--primary-color);
+   display: none!important;
+}
+.home-product-item-action__like-item--liked .home-product-item-action__like-icon-no-fill {
+    display: none;
+}
+.home-product-item-action__like-item--liked .home-product-item-action__like-icon-fill {
+    display: block!important;
+}
+.home-product-item-feedback {
+    display: flex;
 }
 .home-product-item-rating {
-
+    font-size: 9px;
+    color: #ccc;
+}
+.home-product-item-rating-star-gold {
+    color: var(--star-gold);
 }
 .home-product-item-quantity-sold {
 
 }
 .home-product-item-quantity-sold-label {
-
+    font-size: 1.2rem;
+    margin-left: 5px;
 }
 .home-product-item__origin {
-
+   display: flex;
+   margin-right: 12px;
+   margin-top: 6px;
+   margin-bottom: 8px;
 }
 .home-product-item__origin-area {
-
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.65);
 }
 .home-product-item__favorite {
-
+    position: absolute;
+    top:10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.home-product-item__favorite::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    filter: brightness(60%);
 }
 .home-product-item__favorite-icon {
-
+    font-size: 8px;
+    margin: 0 1px 0 5px;
+    color: var(--white-color);
 }
 .home-product-item__favorite-label {
-
+    padding-right: 4px;
+    color: var(--white-color);
 }
 .home-product-item__discount {
-
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(255, 216, 64, 0.94);
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+    padding: 8px 4px 12px;
+    text-align: center;
+}
+.home-product-item__discount::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 18px 5px;
+    border-style: solid;
+    color: rgba(255, 216, 64, 0.94);
+    border-color: transparent currentColor transparent currentColor;
 }
 .home-product-item__discount-percent {
-
+    position: relative;
+    top: -5px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: red;
+    opacity: 0.65;
 }
 .home-product-item__discount-label {
-
+    position: relative;
+    top: -7px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
 }
-.home-product-item__brand-stuff {
 
-}
-.home-product-item__brand-stuff-label {
-
-}
-.home-product-item__brand-stuff-percent {
-
-}
