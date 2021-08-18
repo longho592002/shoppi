@@ -501,7 +501,7 @@ html {
     display: none;
     cursor: default;
     animation: FadeIn ease .4s;
-
+    
 }
 .header__cart-list::after {
     content: "";
@@ -690,6 +690,8 @@ html {
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
+    height: 55vh;
+    overflow-y: auto;
 }
 .header__cart-heading {
     text-align: left;
@@ -701,7 +703,6 @@ html {
 .header__cart-item {
     display: flex;
     align-items: center;
-    
 }
 .header__cart-item:hover {
     background-color: #f8f8f8;
@@ -727,6 +728,14 @@ html {
 .header__cart-item-name {
     font-size: 1.4rem;
     font-weight: 500;
+    max-height: 4rem;
+    max-width: 200px;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
     color: var(--text-color);
 }
 .header__cart-item-price-wrap {
@@ -936,24 +945,35 @@ html {
     display: block;
     margin-right: -5px;
     margin-left: -4px;
+    margin-bottom: 12px;
 }
 .home-product-item {
+    display: block;
     margin-top: 10px;
     background-color: var(--white-color);
     min-width: 192px;
     margin: 10px 4px 0 ;
     border-radius: 2px;
+    text-decoration: none;
     flex-wrap: wrap;
-    cursor: pointer;
     position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+}
+.home-product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
 }
 
 .home-product-item__img {
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 .home-product-item__name {
     font-size: 1.2rem;
@@ -1035,6 +1055,7 @@ html {
 .home-product-item-quantity-sold-label {
     font-size: 1.2rem;
     margin-left: 5px;
+    color: var(--text-color);
 }
 .home-product-item__origin {
    display: flex;
@@ -1087,6 +1108,7 @@ html {
     height: 36px;
     padding: 8px 4px 12px;
     text-align: center;
+    border-top-right-radius: 2px;
 }
 .home-product-item__discount::after {
     content: "";
@@ -1117,3 +1139,24 @@ html {
     text-transform: uppercase;
 }
 
+.line-break {
+    margin-top: 100px;
+    width: 100%;
+    height: 3px;
+    background-color: #d0011b;
+}
+
+.sub-info {
+    margin-bottom: 200px;
+    width: 1200px;
+    margin:auto;
+}
+.sub-info-item {
+
+}
+.sub-info-item-icon {
+    font-size: 30px;
+}
+.sub-info-item-label {
+    font-size: 14px;
+}
