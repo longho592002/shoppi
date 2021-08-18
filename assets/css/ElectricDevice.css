@@ -818,7 +818,8 @@ html {
     position: relative;
     display: block;
 }
-.category-laptop {
+
+.category-ElectricDevice {
     font-size: 1.6rem;
     color: #f6402d!important;
     text-decoration: none;
@@ -826,7 +827,7 @@ html {
     position: relative;
     display: block;
 }
-.category-laptop::before {
+.category-ElectricDevice::before {
     content: "";
     position: absolute;
     left: 12px;
