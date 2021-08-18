@@ -96,8 +96,8 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
     animation: FadeIn linear 0.2s;
+    display: none;
 }
 .modal__overlay {
     position: absolute;
@@ -112,6 +112,9 @@ html {
     z-index: 2;
     max-width: 36%;
     animation: Growth linear 0.2s;
+}
+.modal.open {
+    display: flex;
 }
 /* Button style */
 .btn {
