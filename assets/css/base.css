@@ -113,7 +113,10 @@ html {
     max-width: 36%;
     animation: Growth linear 0.2s;
 }
-.modal.open {
+.modaLogin.open {
+    display: flex;
+}
+.modalRegister.open {
     display: flex;
 }
 /* Button style */

@@ -2205,13 +2205,13 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
 
         <!-- Scrollbar -->
         <!-- Modal layout -->
-           <div class="modal js-modal">
+           <div class="modal js-modalRegister">
              <div class="modal__overlay">
             </div> 
             <div class="modal__body js-modal-container">  
                     <!-- Register form  -->
                        <div class="auth-form">
-                          <div class="auth-form__register js-modal">
+                          <div class="auth-form__register ">
                               <div class="auth-form-container">
                               <div class="auth-form-header">
                                   <h3 class="auth-form-heading">Đăng kí</h3>
@@ -2312,7 +2312,7 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                     </div>
                  </div>
             </div> 
-            <script>
+            <!-- <script>
                 const Register = document.querySelector('.js-Register')
                 const Login = document.querySelector('.js-Login')
                 const modal = document.querySelector('.js-modal')
@@ -2325,6 +2325,25 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+            </script> -->
+
+            <script>
+                const Register = document.querySelector('.js-Register')
+                const modalRegister = document.querySelector('.js-modalRegister')
+                const modalContainer = document.querySelector('.js-modal-container')
+
+                function modalRegister() {
+                    modal.classList.add('open')
+                }
+                Register.addEventListener('click', showRegister)
+
+                function showLogin() {
+                    modal.classList.add('open')
+                    
+                }
+                Login.addEventListener('click', showLogin)
+
+
             </script>
 </body>
 </html>
